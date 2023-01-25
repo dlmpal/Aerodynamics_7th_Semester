@@ -56,8 +56,8 @@ plt.show()
 
 import PyFoil
 fig,ax = plt.subplots(nrows=1,ncols=1)
-x,y,Cp_panel_v = PyFoil.ReadCp("C:/Users/dlmpa/Numerical_data/7th_semester/aerodynamics/NACA6716_CP_v.dat")
-_,_,Cp_panel_i = PyFoil.ReadCp("C:/Users/dlmpa/Numerical_data/7th_semester/aerodynamics/NACA6716_CP_i.dat")
+x,y,Cp_panel_v = PyFoil.ReadCp("NACA6716_CP_v.dat")
+_,_,Cp_panel_i = PyFoil.ReadCp("NACA6716_CP_i.dat")
 
 ax.plot(x,Cp_panel_i,label="inviscid, Cl=2.3")
 ax.plot(x,Cp_panel_v,label="viscous, Cl=1.664")
